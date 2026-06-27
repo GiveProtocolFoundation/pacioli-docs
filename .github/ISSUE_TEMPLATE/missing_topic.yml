@@ -1,0 +1,31 @@
+name: Missing topic / new guide request
+description: Suggest a new documentation page, guide, or section.
+labels: ["docs", "enhancement"]
+body:
+  - type: textarea
+    id: topic
+    attributes:
+      label: What topic should be covered?
+      placeholder: How to reconcile USDC transactions across Ethereum and Polkadot Asset Hub.
+    validations:
+      required: true
+
+  - type: textarea
+    id: audience
+    attributes:
+      label: Who is this for?
+      description: User guide, developer guide, API reference, or self-hosting?
+    validations:
+      required: true
+
+  - type: textarea
+    id: gaps
+    attributes:
+      label: What's currently missing or unclear?
+      description: Have you looked at existing docs? What didn't they cover?
+
+  - type: textarea
+    id: references
+    attributes:
+      label: Helpful references
+      description: Links to related discussions, similar docs elsewhere, or code that should be documented.

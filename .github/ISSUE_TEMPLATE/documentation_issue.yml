@@ -1,0 +1,46 @@
+name: Documentation issue
+description: Something on docs.pacioli.io is incorrect, unclear, or missing.
+labels: ["docs", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve the Pacioli documentation. Please describe
+        the problem you encountered.
+
+  - type: input
+    id: page
+    attributes:
+      label: Which page or URL?
+      placeholder: https://docs.pacioli.io/user-guide/getting-started/
+    validations:
+      required: true
+
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Type of problem
+      options:
+        - Incorrect information
+        - Out of date with the app
+        - Unclear or confusing
+        - Missing content
+        - Broken link
+        - Typo / formatting
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: What's wrong?
+      description: Describe the issue and, if possible, what you expected to see instead.
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested fix (optional)
+      description: If you have a proposed wording or correction, share it here.

@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Application bug or feature request
+    url: https://github.com/GiveProtocolFoundation/Pacioli/issues
+    about: Issues with the Pacioli app itself belong in the main repo.
+  - name: Discussions
+    url: https://github.com/GiveProtocolFoundation/Pacioli/discussions
+    about: For questions, ideas, and general conversation.
